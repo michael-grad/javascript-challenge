@@ -15,12 +15,14 @@ console.log(ufoData);
 // Step 5: Use d3 to update each cell's text with
 // ufo values (datetime, city, state, country, shape, durationMinutes, comments)
 ufoData.forEach(function(element) {
-    console.log(element);
+    // COMMENTED OUT TO ALLOW OTHER OUTPUT TO PRINT TO CONSOLE
+    // console.log(element);
     let row = ufoTable.append("tr");
 
     // Tried capitalizing Entries
     Object.entries(element).forEach(function([key, value]) {
-        console.log(key, value);
+        // COMMENTED OUT TO ALLOW OTHER OUTPUT TO PRINT TO CONSOLE
+        // console.log(key, value);
         let cell = row.append("td");
         cell.text(value);
     });
