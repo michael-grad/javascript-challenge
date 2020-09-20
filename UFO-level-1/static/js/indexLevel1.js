@@ -1,6 +1,6 @@
 // Select the button
 var button = d3.select("#filter-btn");
-
+ 
 // Select the form
 var form = d3.select("#form");
 
@@ -32,7 +32,6 @@ function runEnter() {
 
         let row = ufoTable.append("tr");
 
-        // Tried capitalizing Entries
         Object.entries(element).forEach(function ([key, value]) {
             console.log(key, value);
             let cell = row.append("td");

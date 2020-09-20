@@ -2,7 +2,7 @@
 var button = d3.select("#filter-btn");
 
 // Select the form
-// DEBUG!! -- pressing Enter no longer filters the data presented
+
 // var form = d3.select("#form");
 var form = d3.select("#form");
 console.log(form);
@@ -35,7 +35,6 @@ function runEnter() {
 
 
     // Print the value to the console
-    // DEBUG!! -- why does this print out values for each record in filteredData instead of just what the inputs are???
     console.log(dateInputValue, cityInputValue, stateInputValue, shapeInputValue);
 
     // filter the table's data Modeled after 14.3.9
